@@ -18,8 +18,8 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Olanrewxju/fylo-landing-page.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Olanrewxju/fylo-landing-page.git)
+- Live Site URL: (https://fylo-landing-page-waju.netlify.app/)
 
 ### Built with
 
