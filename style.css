@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: hsl(243, 87%, 12%);
+    font-size: 1.1em;
+    margin: 0;
+}
+
+a {
+    color: #3DA08F;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h4 {
+    font-family: 'Raleway', sans-serif;
+}
+
+.container {
+    padding: 30px;
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 100%;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.align-start {
+    align-items: flex-start;
+}
+
+.flex>div,
+.flex>ul {
+    flex: 1;
+}
+
+.flex>div:first-child {
+    margin-right: 20px;
+}
+
+.flex>div:last-child {
+    margin-left: 20px;
+}
+
+/* Nav Styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+nav ul {
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 50px;
+}
+
+nav ul a {
+    color: hsl(243, 87%, 12%);
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Form Section */
+
+form {
+    display: flex;
+}
+
+input::placeholder {
+    color: hsl(0, 0%, 75%);
+}
+
+input {
+    border: 1px solid hsl(243, 87%, 12%);
+    border-radius: 2px;
+    font-family: 'Raleway', sans-serif;
+    padding: 15px;
+    font-weight: 700;
+    flex: 0.7;
+    font-size: 14px;
+}
+
+button {
+    /* border: 1px solid hsl(243, 87%, 12%); */
+    background-color: hsl(224, 93%, 58%);
+    color: #fff;
+    flex: 0.3;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 10px;
+    font-weight: 700;
+    border-radius: 2px;
+    font-size: 14px;
+    padding: 15px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.light-bluish {
+    background-color: hsl(240, 75%, 98%);
+    margin-top: 100px;
+    position: relative;
+    padding: 50px 0;
+}
+
+.light-bluish::before {
+    content: '';
+    background-image: url(./images/bg-curve-desktop.svg);
+    background-size: cover;
+    background-position: center center;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    height: 60px;
+    width: 100%;
+
+}
+
+
+/* Testimonial */
+.testimonial-box {
+    background-color: white;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-top: 40px;
+    width: 80%;
+}
+
+.testimonial-box p {
+    letter-spacing: 1px;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.user-info {
+    display: flex;
+    margin-top: 20px;
+}
+
+.user-info img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info h4 {
+    margin: 0;
+    font-weight: 700;
+}
+
+/* bluish section */
+.bluish {
+    background-color: hsl(238, 22%, 44%);
+    color: hsl(240, 75%, 98%);
+    padding: 50px;
+}
+
+.bluish form {
+    flex-direction: column;
+
+}
+
+.bluish form input {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    border: none;
+}
+
+.bluish form button {
+    width: 50%;
+    margin: 20px 0;
+}
+
+/* footer */
+footer {
+    background-color: hsl(243, 87%, 12%);
+    color: hsl(240, 75%, 98%);
+    padding: 50px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul li {
+    margin-bottom: 20px;
+}
+
+footer .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .circle {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    body {
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    .flex {
+        flex-direction: column;
+    }
+
+    .light-bluish::before {
+        background-image: url(./images/bg-curve-mobile.svg);
+        height: 80px;
+    }
+
+    .bluish form input {
+        flex: 1;
+    }
+
+    .bluish form button {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .flex > div {
+        width: 100%;
+    }
+
+    .flex>div:first-child {
+        margin-right: 0;
+    }
+
+    .flex>div:last-child {
+        margin-left: 0;
+    }
+
+    .illustration {
+        margin-top: 30px;
+    }
+    
+    .testimonial-box {
+        width: 100%;
+    }
+
+    .user-info {
+        text-align: left;
+    }
+
+    footer .footer-logo {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    footer ul {
+        text-align: left;
+        padding: 0;
+        width: 100%;
+    }
+}
